@@ -1,7 +1,7 @@
 Package: powerLATE
 Type: Package
 Title: Generalized Power Analysis for LATE
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
   person("Kirk", "Bansak", , "kbansak@ucsd.edu", c("aut")),
   person("Eddie", "Yang", , "z5yang@ucsd.edu", c("aut", "cre"))
@@ -16,8 +16,8 @@ URL: https://github.com/kbansak/powerLATE
 BugReports: https://github.com/kbansak/powerLATE/issues
 Suggests: covr
 NeedsCompilation: no
-Packaged: 2020-08-08 19:57:27 UTC; eddie
+Packaged: 2020-09-26 01:08:05 UTC; eddie
 Author: Kirk Bansak [aut],
   Eddie Yang [aut, cre]
 Repository: CRAN
-Date/Publication: 2020-08-14 13:50:09 UTC
+Date/Publication: 2020-09-27 16:40:02 UTC
