@@ -7,7 +7,7 @@
 #' @param power         power of test (1 minus Type II error probability)
 #' @param r2dw			proportion of variation in D left unexplained by Z that is explained by W.
 #' @param r2yw 			proportion of variation in Y left unexplained by Z that is explained by W.
-#' @return A vector of values for one in {kappa, N, power} that is not supplied by the user.
+#' @return A vector of values for one in \{kappa, N, power\} that is not supplied by the user.
 #' @note This function is called internally and thus should not be used directly.
 #' @author Kirk Bansak and Eddie Yang
 #' @seealso \code{\link{equal.unordered.cov}}, \code{\link{unequal.unordered.cov}}, \code{\link{unequal.ordered.cov}}.
@@ -24,8 +24,8 @@ equal.ordered.cov <- function(
 	r2yw = NULL){
 
 	G <- (0.5-(pi/2))*(0.5+(pi/2))
-	S <- 1-r2yw^2
-	T <- 1-r2dw^2
+	S <- 1-r2yw
+	T <- 1-r2dw
 
 	# mdes
 	if (!is.null(power) && !is.null(N)){

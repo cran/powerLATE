@@ -6,18 +6,17 @@
 <!-- badges: start -->
 
 [![](https://www.r-pkg.org/badges/version/powerLATE?color=green)](https://cran.r-project.org/package=powerLATE)
-[![Travis build
-status](https://travis-ci.com/kbansak/powerLATE.svg?branch=master)](https://travis-ci.com/kbansak/powerLATE)
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/kbansak/powerLATE?branch=master&svg=true)](https://ci.appveyor.com/project/kbansak/powerLATE)
 [![Codecov test
-coverage](https://codecov.io/gh/kbansak/powerLATE/branch/master/graph/badge.svg)](https://codecov.io/gh/kbansak/powerLATE?branch=master)
+coverage](https://codecov.io/gh/kbansak/powerLATE/branch/master/graph/badge.svg)](https://app.codecov.io/gh/kbansak/powerLATE?branch=master)
+[![R-CMD-check](https://github.com/kbansak/powerLATE/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kbansak/powerLATE/actions/workflows/R-CMD-check.yaml)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/powerLATE?color=blue)](https://cran.r-project.org/package=powerLATE)
 <!-- badges: end -->
 
 powerLATE implements the generalized power analysis for the local
 average treatment effect (LATE), proposed by [Bansak
 (2020)](https://projecteuclid.org/download/pdfview_1/euclid.ss/1591171230).
+A comprehensive tutorial on using this package [can be found
+here](https://github.com/kbansak/powerLATE_tutorial).
 
 Power analysis is in the context of estimating the LATE (also known as
 the complier average causal effect, or CACE), with calculations based on
@@ -49,33 +48,42 @@ devtools::install_github("kbansak/powerLATE")
 
 ``` r
 library(powerLATE)
+#> powerLATE: Generalized Power Analysis for LATE
+#> Version: 0.1.2
+#> Reference: Bansak, K. (2020). A Generalized Approach to Power Analysis for Local Average Treatment Effects. Statistical Science, 35(2), 254-271.
 ```
 
 powerLATE provides two main functions:
 
-  - `powerLATE()`, which computes the power of the Wald IV estimator, or
-    determines parameters (e.g. required sample size) to obtain a target power.
+- `powerLATE()`, which computes the power of the Wald IV estimator, or
+  determines parameters (e.g. required sample size) to obtain a target
+  power.
 
-  - `powerLATE.cov()`, which is similar to `powerLATE()` but
-    additionally allows the inclusion of covariates.
+- `powerLATE.cov()`, which is similar to `powerLATE()` but additionally
+  allows the inclusion of covariates.
 
 ## Navigating main functions
 
 ![](https://github.com/EddieYang211/powerLATE_aux/blob/master/powerLATE_tree.png?raw=true)
 
-## Examples
+## Tutorial
 
-For examples on how to use the package, see
-[here](https://htmlpreview.github.io/?https://github.com/EddieYang211/powerLATE_aux/blob/master/powerLATE_Examples.html)
+For a comprehensive tutorial on conducting a LATE power analysis with
+this package, see [here](https://github.com/kbansak/powerLATE_tutorial).
+
+## More Examples
+
+For more examples on how to use the package, see
+[here](https://htmlpreview.github.io/?https://github.com/EddieYang211/powerLATE_aux/blob/master/powerLATE_Examples.html).
 
 ## Reference
 
 For a detailed description of the method see:
 
-  - [Bansak, K. (2020). A Generalized Approach to Power Analysis for
-    Local Average Treatment
-    Effects](https://projecteuclid.org/download/pdfview_1/euclid.ss/1591171230)
+- [Bansak, K. (2020). A Generalized Approach to Power Analysis for Local
+  Average Treatment
+  Effects](https://projecteuclid.org/download/pdfview_1/euclid.ss/1591171230)
 
 ## Maintainer
 
-  - [Eddie Yang](https://github.com/EddieYang211)
+- [Eddie Yang](https://github.com/EddieYang211)
